@@ -7,7 +7,7 @@
       "metadata": {
         "description": "The base URI where artifacts required by this template are located. When the template is deployed using the accompanying scripts, a private location in the subscription will be used and this value will be automatically generated."
       },
-      "defaultValue": "https://raw.githubusercontent.com/drie/azure-quickstart-templates/master/moodle-scalable-cluster-ubuntu/"
+      "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/moodle-scalable-cluster-ubuntu/"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
@@ -236,14 +236,14 @@
         "PGSQLS200",
         "PGSQLS400",
         "PGSQLS800",
-        "MYSQLB50",
-        "MYSQLB100",
+        "B_Gen5_1",
+        "B_Gen5_2",
         "MYSQLS100",
         "MYSQLS200",
         "MYSQLS400",
         "MYSQLS800"
       ],
-      "defaultValue": "MYSQLB50",
+      "defaultValue": "B_Gen5_1",
       "metadata": {
         "description": "MySql/Postgresql sku name"
       },

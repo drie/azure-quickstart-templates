@@ -206,13 +206,15 @@
     },
     "skuCapacityDTU": {
       "allowedValues": [
-        50,
-        100,
-        200,
-        400,
-        800
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
       ],
-      "defaultValue": 50,
+      "defaultValue": 2,
       "metadata": {
         "description": "MySql/Postgresql database trasaction units"
       },
@@ -220,9 +222,9 @@
     },
     "skuFamily": {
       "allowedValues": [
-        "SkuFamily"
+        "Gen5"
       ],
-      "defaultValue": "SkuFamily",
+      "defaultValue": "Gen5",
       "metadata": {
         "description": "MySql/Postgresql sku family"
       },
@@ -230,18 +232,8 @@
     },
     "skuName": {
       "allowedValues": [
-        "PGSQLB50",
-        "PGSQLB100",
-        "PGSQLS100",
-        "PGSQLS200",
-        "PGSQLS400",
-        "PGSQLS800",
         "B_Gen5_1",
-        "B_Gen5_2",
-        "MYSQLS100",
-        "MYSQLS200",
-        "MYSQLS400",
-        "MYSQLS800"
+        "B_Gen5_2"
       ],
       "defaultValue": "B_Gen5_2",
       "metadata": {
@@ -259,7 +251,8 @@
     "skuTier": {
       "allowedValues": [
         "Basic",
-        "Standard"
+        "GeneralPurpose",
+        "MemoryOptimized"
       ],
       "defaultValue": "Basic",
       "metadata": {

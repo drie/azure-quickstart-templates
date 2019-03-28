@@ -86,10 +86,10 @@
       "type": "string"
     },
     "webServerType": {
-      "defaultValue": "apache",
+      "defaultValue": "nginx",
       "allowedValues": [
-        "apache",
-        "nginx"
+        "nginx",
+        "apache"
       ],
       "metadata": {
         "description": "Web server type"
@@ -111,7 +111,7 @@
       "type": "string"
     },
     "autoscaleVmCount": {
-      "defaultValue": 10,
+      "defaultValue": 4,
       "metadata": {
         "description": "Maximum number of autoscaled nodes"
       },
@@ -167,7 +167,7 @@
       "type": "int"
     },
     "fileServerDiskCount": {
-      "defaultValue": 4,
+      "defaultValue": 2,
       "minValue": 2,
       "maxValue": 8,
       "metadata": {
@@ -233,7 +233,18 @@
     "skuName": {
       "allowedValues": [
         "B_Gen5_1",
-        "B_Gen5_2"
+        "B_Gen5_2",
+        "GP_Gen5_2",
+        "GP_Gen5_4",
+        "GP_Gen5_8",
+        "GP_Gen5_16",
+        "GP_Gen5_32",
+        "GP_Gen5_64",
+        "MO_Gen5_2",
+        "MO_Gen5_4",
+        "MO_Gen5_8",
+        "MO_Gen5_16",
+        "MO_Gen5_32"
       ],
       "defaultValue": "B_Gen5_2",
       "metadata": {
